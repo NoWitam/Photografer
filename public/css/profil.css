@@ -1,0 +1,219 @@
+#profil_center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#profil_top h1 {
+    font-size: 64px;
+    text-align: center;
+    color: #FFC125;
+}
+
+#profil_top {
+    margin-top: 40px;
+    width: 50vw;
+    color: white;
+}
+
+#profil_top textarea {
+    font-size: 24px;
+    color: white;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    resize: none;
+    text-indent: 0;
+    margin-top: 20px;
+}
+
+#profil_top #buttons #follow img, #profil_top #buttons #unfollow img {
+    height: 42px;
+    width: 42px;
+}
+
+#profil_top #buttons #edytuj_opis img {
+    height: 36px;
+}
+
+#profil_top #buttons #dodaj_zdjecie img {
+    height: 30px;
+    width: 30px;
+}
+
+#profil_top #buttons .profil_panel {
+    border: 4px white solid;
+    font-size: 18px;
+    text-align: center;
+    width: 160px;
+    height: 42px;
+    border-radius: 20px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#profil_top #buttons .profil_panel:hover {
+    transition: 0.4s;
+    background-color: rgba(67,83,112,.2);
+}
+
+#profil_top #buttons .profil_panel:hover > img {
+    transition: 0.4s;
+    opacity: 0.7;
+}
+
+#profil_top #buttons .profil_panel a {
+    height: 42px;
+}
+
+#profil_top #buttons .profil_panel span {
+    height: 42px;
+    color: white;
+    text-decoration: none;
+    border: 0;
+}
+
+#profil_top #buttons #follow {
+    border: 4px solid green;
+}
+
+#profil_top #buttons #unfollow {
+    border: 4px solid white;
+}
+
+#follow_submit {
+    display: none;
+}
+
+#unfollow_submit {
+    display: none;
+}
+
+#profil_top #buttons a {
+    text-decoration: none;
+}
+
+#profil_top #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+#images {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#images .img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#images .img_main {
+    min-height: 20vh;
+    max-height: 40vh;
+    cursor: pointer;
+    border: 4px solid white;
+}
+
+.img:hover {
+    transition: 1s;
+}
+
+.img:hover > .top_photo {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.top_photo {
+    top: 74px;
+    height: 70px;
+    width: calc(100% - 8px);
+    margin-left: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.781) 0px, rgba(0, 0, 0, 0.781) 50px, rgba(0, 0, 0, 0.4) 74px);
+    opacity: 0;
+}
+
+.top_photo .ocena {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.top_photo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_photo img{
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-right: 8px;
+    margin-left: 20px;
+}
+
+.top_photo a{
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Lato",sans-serif;
+    margin-right: 8px;
+}
+
+.top_photo h1 {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+
+#choose_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#choose_page div {
+    width: 6vw;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 2px solid rgba(67,83,112,.2);
+    border-bottom: 2px solid rgba(67,83,112,.2);
+}
+
+#choose_page div:hover {
+    background-color: #FFFFFF22;
+}
+
+#choose_page #activ {
+    border-top: 2px solid #FFC125;
+    border-bottom: 2px solid #FFC125;
+}

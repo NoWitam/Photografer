@@ -1,0 +1,25 @@
+#start_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#start_center h1 {
+    color: #FFC125;
+    font-size: 64px;
+    text-align: center;
+}
+
+#start_center h2 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+#start_center h3 {
+    color: green;
+    font-size: 36px;
+    text-align: right;
+    margin-right: 100px;
+}

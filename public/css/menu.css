@@ -1,0 +1,264 @@
+body {
+    background-color: #080f1f;
+    display: flex;
+    margin: 0;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 100vh;
+    width: 100px;
+    border-right: 2px solid rgba(67,83,112,.2);
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+#main {
+    width: calc(100vw - 100px);
+    z-index: 5;
+}
+
+#menu .menu_item {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#menu .activ {
+    border-right: 2px solid #FFC125;
+}
+
+#menu .menu_item img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 4px;
+    margin-top: 18px;
+    opacity: 0.7;
+}
+
+#menu .menu_item:hover {
+    background-color: #0b1c39;
+}
+
+#menu .menu_item:hover img {
+    opacity: 1;
+}
+
+#menu #sign {
+    margin-bottom: 10px;
+}
+
+#menu input {
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 40px;
+    color: rgba(255, 255, 255, .7);
+    font-size: 14px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#menu #log {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(67,83,112,.4);
+}
+
+#menu #log:hover {
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
+
+#menu #logout {
+    background-color:darkgreen;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+#menu #logout:hover {
+    background-color: green;
+    color: white;
+}
+
+#menu #sign {
+    background-color:darkgreen;
+    border: 0;
+}
+
+#menu #sign:hover {
+    background-color: green;
+    color: white;
+}
+
+#hidden {
+    z-index: 1;
+}
+
+.hidden_center {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#zaloguj {
+    visibility: hidden;
+    background-color: #080f1f;
+    width: 652px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+}
+
+.zaloguj_side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hidden_div h2 {
+    margin-left: 40px;
+    font-size: 36px;
+}
+
+#zaloguj_x h2 {
+    margin-right: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#zaloguj_x h2:hover {
+    opacity: 1;
+}
+
+.hidden_div input {
+    font-size: 18px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: 2px solid rgba(67,83,112,.2);
+    border-radius: 10px;
+    margin-left: 40px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.hidden_div .left {
+    margin-right: 82px;
+}
+
+.hidden_div a {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.hidden_div input[type='submit'] {
+    margin: 0;
+    margin-right: 40px;
+    cursor: pointer;
+    border: 0;
+    background-color: #FFC125;
+    color: #080f1f;
+    font-size: 28px;
+    font-weight: 800;
+    width: 180px;
+    border-radius: 40px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.hidden_div input[type='submit']:hover {
+    transition: 0.4s;
+    opacity: 0.8;
+}
+
+#dolacz {
+    visibility: hidden;
+    background-color: #080f1f;
+    width: 652px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 1;
+}
+
+#dolacz_x h2 {
+    margin-right: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#dolacz_x h2:hover {
+    opacity: 1;
+}
+
+#search {
+    visibility: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: calc(100vw - 80px);
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#search_x {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    opacity: 0.7;
+}
+
+#search #napis {
+   color: #FFC125;
+   font-size: 24px;
+}
+
+#search_x:hover {
+    opacity: 1;
+}
+
+#search input {
+    width: 100%;
+    font-size: 64px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    font-weight: 800;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
