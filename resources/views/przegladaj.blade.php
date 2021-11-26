@@ -31,7 +31,7 @@
    @php
       $now = time();
       $rok = 365*24;
-      $miesiec = 24*30;
+      $miesiac = 24*30;
       $tydzien = 24*7;
       $dzien = 24;
       $minuta = 1/60;
@@ -62,7 +62,7 @@
          if($time >= $rok ) 
          {
             $text = intToText($time, $rok, 'rok', 'lata');
-         } else if($time >= $miesiec)
+         } else if($time >= $miesiac)
          {
             $text = intToText($time, $miesiac, 'miesiac', 'miesiace');
          } else if($time >= $tydzien)
