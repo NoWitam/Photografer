@@ -26,7 +26,7 @@ class PhotoRequest extends FormRequest
         return [
             'nazwa' => 'required|string|min:3|max:15|',
             'description' => 'max:300',
-            'image' => 'required|mimes:jpg‬',
+            'image' => 'required|mimes:jpg',
             'hashtag1' => 'max:8',
             'hashtag2' => 'max:8',
             'hashtag3' => 'max:8',
