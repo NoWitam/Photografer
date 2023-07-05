@@ -17,7 +17,7 @@
 @endif
     <form method='POST' action="{{ route('photo.add') }}" files="true" enctype="multipart/form-data">
     {{ csrf_field() }}
-        <div> <input type='text' name='nazwa' minlength='3' maxlength="15" placeholder="Nazwa ..."> </div>
+        <div> <input type='text' name='nazwa' minlength='3' maxlength="15" placeholder="Nazwad ..."> </div>
         <div> 
             <input type='file' name='image' id='file' accept='image/jpeg'> 
             <label for='file' id='dodaj'>Wybierz zdjęcie ..</label>
